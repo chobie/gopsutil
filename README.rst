@@ -18,11 +18,11 @@ Available archtectures
 - Linux/amd64
 - Linux/arm (raspberry pi)
 - Windows/amd64
-
+- Darwin
 (I do not have a darwin machine)
 
 
-All works are implemented without cgo by porting c struct to golang struct.
+Almost works are implemented without cgo by porting c struct to golang struct.
 
 
 Usage
@@ -111,15 +111,15 @@ Current Status
 - done
 
   - cpu_times (linux, freebsd)
-  - cpu_count (linux, freebsd, windows)
-  - virtual_memory (linux, freebsd, windows)
+  - cpu_count (linux, freebsd, windows, darwin)
+  - virtual_memory (linux, freebsd, windows, darwin)
   - swap_memory (linux, freebsd)
   - disk_partitions (linux, freebsd, windows)
   - disk_io_counters (linux)
   - disk_usage (linux, freebsd, windows)
-  - net_io_counters (linux, freebsd, windows)
-  - boot_time (linux, freebsd, windows(but little broken))
-  - users (linux, freebsd)
+  - net_io_counters (linux, freebsd, windows, darwin)
+  - boot_time (linux, freebsd, windows(but little broken), darwin)
+  - users (linux, freebsd, darwin)
   - pids (linux, freebsd)
   - pid_exists (linux, freebsd)
   - Process class

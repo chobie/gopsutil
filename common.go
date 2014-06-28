@@ -4,6 +4,7 @@
 //  - linux (amd64, arm)
 //  - freebsd (amd64)
 //  - windows (amd64)
+//  - darwin
 package gopsutil
 
 import (
